@@ -169,3 +169,19 @@ const navigation = () => {
 };
 
 navigation();
+
+// Scroll to top
+
+let scrollToTop = document.querySelector(".js-scroll-to-top");
+
+window.onscroll = function () {
+    if (window.scrollY >= 500) {
+        scrollToTop.style.display = "block";
+    } else{
+        scrollToTop.style.display = "none";
+    }
+}
+
+scrollToTop.onclick = function () {
+    window.scrollTo({left: "0", top: "0", behavior: "smooth"});
+}
