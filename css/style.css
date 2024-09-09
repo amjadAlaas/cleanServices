@@ -1,14 +1,13 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-
 /* Variables */
 :root {
     --hue: 200;
     --saturation: 70%;
     --lightness: 55%;
     --main-color: hsl(var(--hue), var(--saturation), var(--lightness));
-    
+
     /* text color */
     --text-white: hsl(0, 0%, 100%);
     --text-light-gray: hsl(0, 0%, 96%);
@@ -19,7 +18,7 @@
     --body-bg-color: hsl(var(--hue), 60%, 94%);
     --bg-color: hsl(var(--hue), 60%, 96%);
     --bg-white: hsl(0, 0%, 100%);
-    
+
     /* border-color */
     --border-color: hsl(var(--hue), 48%, 80%);
 
@@ -47,13 +46,12 @@ body.t-dark {
     /* bg colors */
     --body-bg-color: hsl(var(--hue), 20%, 10%);
     --bg-color: hsl(var(--hue), 13%, 17%);
-    
+
     /* border color */
     --border-color: hsl(var(--hue), 15%, 30%);
 
     /* shadow */
     --shadow: 0 0 10px hsl(var(--hue), 19%, 7%, 0.9);
-
 }
 /* base */
 html {
@@ -64,7 +62,8 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
-::before, ::after {
+::before,
+::after {
     box-sizing: border-box;
 }
 body {
@@ -84,7 +83,12 @@ a {
 ul {
     list-style: none;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--text-x-dark-graydark-gray);
     line-height: 1.3;
 }
@@ -122,7 +126,7 @@ img {
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 30px
+    gap: 30px;
 }
 /* section */
 .section-padding {
@@ -180,7 +184,7 @@ button {
     border-radius: 30px;
     vertical-align: middle;
     user-select: none;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 }
 .btn:hover {
     background-color: transparent;
@@ -207,7 +211,7 @@ textarea.input-control {
     display: block;
     height: 150px;
     padding-top: 15px;
-    resize: none; 
+    resize: none;
 }
 .input-control:focus {
     outline: 1px solid var(--border-color);
@@ -232,7 +236,7 @@ textarea.input-control {
 }
 .preloader.fade-out {
     opacity: 0;
-    transition: opacity .6s ease;
+    transition: opacity 0.6s ease;
 }
 .preloader div {
     height: 40px;
@@ -273,7 +277,7 @@ textarea.input-control {
     background-color: var(--bg-color);
     box-shadow: var(--shadow);
     transform: translateY(calc(-100% - 10px));
-    transition: transform .5s ease;
+    transition: transform 0.5s ease;
 }
 .header.bg-reveal::before {
     transform: translateY(0);
@@ -303,13 +307,13 @@ textarea.input-control {
     display: inline-block;
     margin-left: 35px;
 }
-.nav a{
+.nav a {
     text-transform: capitalize;
     font-size: var(--fs-md);
     color: var(--text-x-dark-gray);
     display: block;
     padding: 10px 0;
-    transition: color .3s ease;
+    transition: color 0.3s ease;
 }
 .nav a:hover {
     color: var(--main-color);
@@ -318,7 +322,8 @@ textarea.input-control {
 .home {
     padding: 100px 0 60px;
 }
-.home-text, .home-img {
+.home-text,
+.home-img {
     grid-column: span 6;
     align-self: center;
     position: relative;
@@ -369,10 +374,14 @@ textarea.input-control {
     position: relative;
     transition: all 1.5s ease;
 }
+
+
 .about-text {
     left: -100px;
     opacity: 0;
 }
+
+
 .about-img{
     right: -100px;
     opacity: 0;
@@ -419,7 +428,7 @@ textarea.input-control {
     text-transform: uppercase;
     margin: 0;
     color: var(--text-light-gray);
-}
+}  
 
 /* services */
 .services-item {
@@ -428,9 +437,9 @@ textarea.input-control {
     position: relative;
     transition: all 1.5s ease;
     top: 100px;
-    opacity: .5;
+    opacity: 0.5;
 }
-.services-item .img-box{
+.services-item .img-box {
     height: 140px;
     width: 140px;
     border-radius: 50%;
@@ -442,7 +451,7 @@ textarea.input-control {
 }
 .services-item .img-box img {
     border-radius: 50%;
-    transition: transform .5s ease;
+    transition: transform 0.5s ease;
 }
 .services-item:hover .img-box img {
     transform: scale(1.5);
@@ -495,7 +504,7 @@ textarea.input-control {
     position: relative;
     padding-left: 27px;
 }
-.pricing-body li+li {
+.pricing-body li + li {
     margin-top: 10px;
 }
 .pricing-body li i {
@@ -518,7 +527,7 @@ textarea.input-control {
 }
 .team-item img {
     border-radius: 50%;
-    transition: filter .5s ease;
+    transition: filter 0.5s ease;
 }
 
 .team-item:hover img {
@@ -535,7 +544,7 @@ textarea.input-control {
     position: relative;
     z-index: 1;
     border-radius: 0 40px;
-    transition: border-radius .5s ease;
+    transition: border-radius 0.5s ease;
 }
 .team-item:hover .details {
     border-radius: 40px 0;
@@ -549,7 +558,6 @@ textarea.input-control {
 .team-item p {
     margin: 0;
     color: var(--text-light-gray);
-
 }
 /* contact */
 .contact-grid {
@@ -607,7 +615,7 @@ textarea.input-control {
     font-weight: 500;
     text-transform: capitalize;
 }
-.footer .social-links a{
+.footer .social-links a {
     height: 40px;
     width: 40px;
     display: inline-flex;
@@ -617,7 +625,7 @@ textarea.input-control {
     justify-content: center;
     margin: 0 4px;
     border: 1px solid transparent;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
 }
 .footer .social-links a:hover {
     background-color: transparent;
@@ -634,7 +642,7 @@ textarea.input-control {
     right: 0;
     top: 0;
     box-shadow: var(--shadow);
-    transition: all .6s ease;
+    transition: all 0.6s ease;
 }
 .style-switcher.open {
     width: 280px;
@@ -647,7 +655,7 @@ textarea.input-control {
 }
 .style-switcher-toggler {
     width: 40px;
-    height: 40px;   
+    height: 40px;
     background-color: var(--main-color);
     color: var(--text-white);
     font-size: var(--fs-md);
@@ -671,7 +679,7 @@ textarea.input-control {
     margin-bottom: 10px;
 }
 .hue-slider {
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
     width: 100%;
     outline: none;
     height: 12px;
@@ -679,21 +687,21 @@ textarea.input-control {
     margin-bottom: 5px;
     cursor: pointer;
     background: linear-gradient(
-                    to right,
-                    hsl(0, var(--saturation), var(--lightness)),
-                    hsl(30, var(--saturation), var(--lightness)),
-                    hsl(60, var(--saturation), var(--lightness)),
-                    hsl(90, var(--saturation), var(--lightness)),
-                    hsl(120, var(--saturation), var(--lightness)),
-                    hsl(150, var(--saturation), var(--lightness)),
-                    hsl(180, var(--saturation), var(--lightness)),
-                    hsl(210, var(--saturation), var(--lightness)),
-                    hsl(240, var(--saturation), var(--lightness)),
-                    hsl(270, var(--saturation), var(--lightness)),
-                    hsl(300, var(--saturation), var(--lightness)),
-                    hsl(330, var(--saturation), var(--lightness)),
-                    hsl(360, var(--saturation), var(--lightness))
-            );
+        to right,
+        hsl(0, var(--saturation), var(--lightness)),
+        hsl(30, var(--saturation), var(--lightness)),
+        hsl(60, var(--saturation), var(--lightness)),
+        hsl(90, var(--saturation), var(--lightness)),
+        hsl(120, var(--saturation), var(--lightness)),
+        hsl(150, var(--saturation), var(--lightness)),
+        hsl(180, var(--saturation), var(--lightness)),
+        hsl(210, var(--saturation), var(--lightness)),
+        hsl(240, var(--saturation), var(--lightness)),
+        hsl(270, var(--saturation), var(--lightness)),
+        hsl(300, var(--saturation), var(--lightness)),
+        hsl(330, var(--saturation), var(--lightness)),
+        hsl(360, var(--saturation), var(--lightness))
+    );
 }
 .hue-slider:focus {
     box-shadow: var(--focus-shadow);
@@ -707,17 +715,15 @@ textarea.input-control {
     cursor: pointer;
 }
 .hue-slider.hue-slider::-webkit--range-thumb:hover {
-    opacity: .8;
-
+    opacity: 0.8;
 }
 .hue-slider::-moz-range-thumb:hover {
-    opacity: .8;
+    opacity: 0.8;
 }
 .form-switch {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-
 }
 .form-switch span {
     padding-right: 15px;
@@ -727,13 +733,13 @@ textarea.input-control {
     pointer-events: none;
     opacity: 0;
 }
-.form-switch .box{
+.form-switch .box {
     height: 24px;
     width: 44px;
     border-radius: 12px;
     border: 1px solid var(--border-color);
     position: relative;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
 }
 .form-switch .box::before {
     content: '';
@@ -744,7 +750,7 @@ textarea.input-control {
     position: absolute;
     left: 4px;
     top: 4px;
-    transition: all .4s ease;
+    transition: all 0.4s ease;
 }
 .form-switch input:checked + .box {
     background-color: var(--main-color);
@@ -763,7 +769,7 @@ textarea.input-control {
     position: fixed;
     z-index: 100;
     bottom: 40px;
-    right:  40px;
+    right: 40px;
     padding: 10px;
     font-size: 20px;
     font-weight: bold;
@@ -818,7 +824,7 @@ textarea.input-control {
         --fs-xl: 18px;
     }
     /* Header */
-    
+
     .nav {
         position: fixed;
         right: 0;
@@ -829,7 +835,7 @@ textarea.input-control {
         padding: 60px 30px 30px;
         overflow-y: auto;
         transform: translateX(100%);
-        transition: all .5s ease;
+        transition: all 0.5s ease;
     }
     .nav.open {
         transform: translateX(0);
@@ -867,8 +873,7 @@ textarea.input-control {
         background-color: transparent;
     }
     .nav-toggler span::before,
-    .nav-toggler span::after
-     {
+    .nav-toggler span::after {
         content: '';
         position: absolute;
         left: 0;
@@ -876,12 +881,12 @@ textarea.input-control {
         width: 100%;
         height: 100%;
         background-color: var(--main-color);
-        transition: transform .3s ease;
+        transition: transform 0.3s ease;
     }
     .nav-toggler span::before {
         transform: translateY(-7px);
     }
-    .nav-toggler.active  span::before {
+    .nav-toggler.active span::before {
         transform: rotate(45deg);
     }
     .nav-toggler span::after {
@@ -891,7 +896,7 @@ textarea.input-control {
         transform: rotate(-45deg);
     }
     /* Home */
-    .home-text, 
+    .home-text,
     .home-img {
         grid-column: span 12;
     }
@@ -933,7 +938,7 @@ textarea.input-control {
         gap: 30px 15px;
     }
     /* home */
-    .home-img img{
+    .home-img img {
         max-width: 200px;
     }
     .home-img .circle {
